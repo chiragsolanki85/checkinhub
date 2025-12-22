@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Goal Type Selection</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "charcoal": "#2D3748","mint-green": "#A7F3D0","mint-green-dark": "#34D399","soft-lavender": "#E9D8FD","accent-coral": "#FFA07A","background-light": "#FFFFFF",
+              "background-dark": "#1A202C","neutral-200": "#E5E7EB","neutral-500": "#6B7280","neutral-100": "#F3F4F6",},
+            fontFamily: {
+              "display": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<header class="flex items-center p-4 pb-2 justify-between sticky top-0 bg-background-light z-10">
+<div class="text-charcoal flex size-12 shrink-0 items-center justify-start">
+<span class="material-symbols-outlined text-charcoal" style="font-size: 24px;">arrow_back_ios_new</span>
+</div>
+<h1 class="text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-12 text-charcoal">Select Your Goal</h1>
+</header>
+<main class="flex-grow flex flex-col p-4">
+<div class="flex flex-col gap-4" style="--radio-dot-svg: url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27%232D3748%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3ccircle cx=%278%27 cy=%278%27 r=%274%27/%3e%3c/svg%3e');">
+<label class="flex items-center gap-4 rounded-xl border-2 border-solid p-4 transition-colors duration-200 border-mint-green-dark bg-mint-green has-[:checked]:border-mint-green-dark has-[:checked]:bg-mint-green cursor-pointer">
+<div class="flex-shrink-0">
+<span class="material-symbols-outlined text-mint-green-dark" style="font-size: 28px;">trending_down</span>
+</div>
+<div class="flex grow flex-col">
+<p class="text-base font-bold leading-normal text-charcoal">Lose weight</p>
+<p class="text-neutral-500 text-sm font-normal leading-normal">Set a target to reduce your body weight.</p>
+</div>
+<input checked="" class="h-6 w-6 shrink-0 border-2 bg-transparent text-charcoal focus:ring-0 focus:ring-offset-0 border-neutral-500 checked:border-charcoal checked:bg-white checked:bg-[image:--radio-dot-svg]" name="goal-selection" type="radio"/>
+</label>
+<label class="flex items-center gap-4 rounded-xl border-2 border-solid p-4 transition-colors duration-200 border-neutral-200 bg-neutral-100 has-[:checked]:border-mint-green-dark has-[:checked]:bg-mint-green cursor-pointer">
+<div class="flex-shrink-0">
+<span class="material-symbols-outlined text-neutral-500" style="font-size: 28px;">trending_up</span>
+</div>
+<div class="flex grow flex-col">
+<p class="text-base font-bold leading-normal text-charcoal">Gain weight</p>
+<p class="text-neutral-500 text-sm font-normal leading-normal">Focus on building mass and strength.</p>
+</div>
+<input class="h-6 w-6 shrink-0 border-2 bg-transparent text-charcoal focus:ring-0 focus:ring-offset-0 border-neutral-500 checked:border-charcoal checked:bg-white checked:bg-[image:--radio-dot-svg]" name="goal-selection" type="radio"/>
+</label>
+<label class="flex items-center gap-4 rounded-xl border-2 border-solid p-4 transition-colors duration-200 border-neutral-200 bg-neutral-100 has-[:checked]:border-mint-green-dark has-[:checked]:bg-mint-green cursor-pointer">
+<div class="flex-shrink-0">
+<span class="material-symbols-outlined text-neutral-500" style="font-size: 28px;">health_and_safety</span>
+</div>
+<div class="flex grow flex-col">
+<p class="text-base font-bold leading-normal text-charcoal">Maintain / improve health</p>
+<p class="text-neutral-500 text-sm font-normal leading-normal">Build habits and track your progress.</p>
+</div>
+<input class="h-6 w-6 shrink-0 border-2 bg-transparent text-charcoal focus:ring-0 focus:ring-offset-0 border-neutral-500 checked:border-charcoal checked:bg-white checked:bg-[image:--radio-dot-svg]" name="goal-selection" type="radio"/>
+</label>
+</div>
+</main>
+<footer class="sticky bottom-0 p-4 bg-background-light">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-5 flex-1 w-full bg-accent-coral text-charcoal text-base font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Continue</span>
+</button>
+</footer>
+</div>
+
+</body></html>

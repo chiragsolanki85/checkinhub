@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Welcome Screen</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#13ec5b",
+              "background-light": "#f6f8f6",
+              "background-dark": "#102216",
+            },
+            fontFamily: {
+              "display": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark">
+<main class="flex-grow flex flex-col justify-center px-4 py-8">
+<!-- App Logo -->
+<div class="flex justify-center items-center h-16 w-16 mx-auto mb-6">
+<span class="material-symbols-outlined text-primary text-5xl">spa</span>
+</div>
+<!-- Hero Image/Illustration -->
+<div class="relative mx-auto mb-8 h-48 w-48 flex items-center justify-center">
+<div class="absolute h-full w-full bg-primary/20 rounded-full" data-alt="Vibrant green circular background blur"></div>
+<div class="absolute h-3/4 w-3/4 bg-primary/30 rounded-full" data-alt="Slightly smaller green circular background blur"></div>
+<span class="material-symbols-outlined text-white text-7xl z-10">trending_up</span>
+</div>
+<!-- HeadlineText -->
+<h1 class="text-black dark:text-white tracking-light text-[32px] font-bold leading-tight text-center pb-3">Build the Best Version of You.</h1>
+<!-- BodyText -->
+<p class="text-stone-600 dark:text-stone-300 text-base font-normal leading-normal pb-3 pt-1 text-center max-w-sm mx-auto">
+            Create lasting habits, track your weight, and stay accountable on your journey to a healthier life. Simple, motivating, and data-driven.
+        </p>
+<!-- TextGrid -->
+<div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 pt-6 pb-4 max-w-md mx-auto w-full">
+<div class="flex flex-1 gap-3 rounded-lg border border-stone-800 bg-black/20 dark:border-stone-700 dark:bg-black/40 p-4 flex-col text-center items-center">
+<span class="material-symbols-outlined text-primary" style="font-size: 24px;">check_circle</span>
+<div class="flex flex-col gap-1">
+<h2 class="text-black dark:text-white text-base font-bold leading-tight">Habit Building</h2>
+<p class="text-stone-500 dark:text-stone-400 text-sm font-normal leading-normal">Build positive routines</p>
+</div>
+</div>
+<div class="flex flex-1 gap-3 rounded-lg border border-stone-800 bg-black/20 dark:border-stone-700 dark:bg-black/40 p-4 flex-col text-center items-center">
+<span class="material-symbols-outlined text-primary" style="font-size: 24px;">scale</span>
+<div class="flex flex-col gap-1">
+<h2 class="text-black dark:text-white text-base font-bold leading-tight">Weight Tracking</h2>
+<p class="text-stone-500 dark:text-stone-400 text-sm font-normal leading-normal">Monitor your journey</p>
+</div>
+</div>
+<div class="flex flex-1 gap-3 rounded-lg border border-stone-800 bg-black/20 dark:border-stone-700 dark:bg-black/40 p-4 flex-col text-center items-center">
+<span class="material-symbols-outlined text-primary" style="font-size: 24px;">show_chart</span>
+<div class="flex flex-col gap-1">
+<h2 class="text-black dark:text-white text-base font-bold leading-tight">See Your Progress</h2>
+<p class="text-stone-500 dark:text-stone-400 text-sm font-normal leading-normal">Visualize your success</p>
+</div>
+</div>
+</div>
+</main>
+<footer class="px-4 pb-8 pt-4">
+<!-- SingleButton -->
+<div class="flex pb-3">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 flex-1 bg-primary text-background-dark text-base font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Get Started</span>
+</button>
+</div>
+<!-- MetaText -->
+<p class="text-stone-500 dark:text-stone-400 text-sm font-normal leading-normal text-center">
+            Already have an account? <a class="font-bold underline text-primary/90 dark:text-primary" href="#">Sign In</a>
+</p>
+</footer>
+</div>
+</body></html>
