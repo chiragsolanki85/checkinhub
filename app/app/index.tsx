@@ -1,7 +1,15 @@
-import { Redirect } from 'expo-router';
+import { Text, View } from "react-native";
 
 export default function Index() {
-    // TODO: Check if user has completed onboarding
-    // For now, always go to onboarding for demo
-    return <Redirect href="/onboarding" />;
+    return (
+        <View
+            style={{
+                flex: 1,
+                justifyContent: "center",
+                alignItems: "center",
+            }}
+        >
+            <Text>Hello World</Text>
+        </View>
+    );
 }
